@@ -1,0 +1,890 @@
+/* ==========================================================================
+   症状ページ（めまい）専用スタイル
+   style_v35.css を土台に読み込んだ上で追加する差分CSS。
+   共通セクション（ヘッダー／FV／選ばれる理由／特徴／キャンペーン／CTA／
+   書籍紹介／医師推薦／鍼灸について／メディア取材／推薦の声／選ばれる理由7つ／
+   Q&A／アクセス／Map／フッター等）は style_v35.css をそのまま流用。
+   ここには症状ページ固有セクションのみ追加する。
+   ========================================================================== */
+
+/* ==========================================================================
+   Worry（お悩み）- PC
+   ========================================================================== */
+.worry {
+  width: 100%;
+  background: var(--color-white);
+}
+
+.worry__inner {
+  position: relative;
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  box-sizing: border-box;
+  padding: 80px var(--container-padding-inline);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.worry__heading-title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.worry__box {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--color-white);
+  border: 1px solid var(--color-accent);
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.worry__list {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 648px;
+  max-width: 648px;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.worry__list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.worry__check {
+  flex-shrink: 0;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.worry__list-text {
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
+
+.worry__box-photo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 451px;
+  max-width: 37.6%;
+  opacity: 0.66;
+  pointer-events: none;
+}
+
+.worry__box-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.worry__arrow {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 16px solid var(--color-accent);
+}
+
+.worry__banner {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--color-white);
+}
+
+.worry__banner-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.worry__banner-text {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: 3.2px;
+  color: var(--color-text);
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* ==========================================================================
+   Worry（お悩み）- SP
+   ========================================================================== */
+.sp-worry {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--color-white);
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.sp-worry__heading-title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.4;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.sp-worry__box {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--color-white);
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.sp-worry__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.sp-worry__list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.sp-worry__check {
+  flex-shrink: 0;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.sp-worry__list-text {
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
+
+.sp-worry__box-photo {
+  width: 100%;
+  max-width: 358px;
+  opacity: 0.66;
+  pointer-events: none;
+}
+
+.sp-worry__box-photo img {
+  width: 66%;
+  height: auto;
+  margin-inline: auto;
+  object-fit: contain;
+}
+
+.sp-worry__arrow {
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 13px solid var(--color-accent);
+}
+
+.sp-worry__banner {
+  position: relative;
+  width: 100%;
+  min-height: 160px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--color-white);
+}
+
+.sp-worry__banner-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.sp-worry__banner-text {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.4;
+  color: var(--color-text);
+  text-align: center;
+  padding: 24px 0;
+}
+
+/* ==========================================================================
+   Symptom Voice（お客様の声・めまい特化）- PC
+   見出し部分は共通の .voice__heading 系クラスをそのまま流用する。
+   ========================================================================== */
+.symptom-voice {
+  width: 100%;
+  background: #edf0e6;
+  padding-bottom: 80px;
+}
+
+.symptom-voice__cards {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-top: 40px;
+  box-sizing: border-box;
+  padding: 0 var(--container-padding-inline);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.symptom-voice-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--color-white);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.symptom-voice-card__monstera {
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  width: 220px;
+  height: 220px;
+  opacity: 0.16;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.symptom-voice-card__monstera img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.symptom-voice-card__video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+}
+
+.symptom-voice-card__video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.symptom-voice-card__title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.symptom-voice-card__photo {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.symptom-voice-card__photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.symptom-voice-card__photo--cover img {
+  object-fit: cover;
+  aspect-ratio: 1040 / 630;
+}
+
+.symptom-voice-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.symptom-voice-card__text {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+
+.symptom-voice-card__disclaimer {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--color-text-60);
+}
+
+.symptom-voice__note {
+  margin: 0;
+  padding-left: 80px;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Symptom Voice（お客様の声・めまい特化）- SP
+   ========================================================================== */
+.sp-symptom-voice {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background: #edf0e6;
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.sp-symptom-voice__heading {
+  width: 100%;
+  box-sizing: border-box;
+  background: #b1bd8c;
+  border-radius: 4px;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.sp-symptom-voice__eyebrow-group {
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.sp-symptom-voice__eyebrow {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 5.2px;
+  color: var(--color-nav-bg);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.sp-symptom-voice__eyebrow-line {
+  width: 48px;
+  height: 1px;
+  background: var(--color-nav-bg);
+}
+
+.sp-symptom-voice__title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.sp-symptom-voice__staff-photo {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 179.41px;
+  width: 140px;
+  height: 119px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.sp-symptom-voice__staff-photo img {
+  width: 100%;
+  height: 192.57%;
+  object-fit: cover;
+}
+
+.sp-symptom-voice__cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sp-symptom-voice-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.sp-symptom-voice-card__monstera {
+  position: absolute;
+  right: -24px;
+  bottom: -24px;
+  width: 120px;
+  height: 120px;
+  opacity: 0.16;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.sp-symptom-voice-card__monstera img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sp-symptom-voice-card__video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #000;
+}
+
+.sp-symptom-voice-card__video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.sp-symptom-voice-card__title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.sp-symptom-voice-card__photo {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.sp-symptom-voice-card__photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.sp-symptom-voice-card__photo--cover img {
+  object-fit: cover;
+  aspect-ratio: 318 / 180;
+}
+
+.sp-symptom-voice-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sp-symptom-voice-card__text {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+
+.sp-symptom-voice-card__disclaimer {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--color-text-60);
+}
+
+.sp-symptom-voice__note {
+  margin: 16px 0 0;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-text);
+  text-align: left;
+}
+
+/* ==========================================================================
+   Approach（アプローチ）- PC
+   ========================================================================== */
+.approach {
+  --approach-bg: #edf0e6;
+  --approach-accent: #b1bd8c;
+  width: 100%;
+  background: var(--approach-bg);
+  padding: 40px 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.approach__inner {
+  position: relative;
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  box-sizing: border-box;
+  padding: 0 var(--container-padding-inline);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.approach__heading-row {
+  position: relative;
+  width: 100%;
+}
+
+.approach__heading {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+  width: 100%;
+}
+
+.approach__accent-bar {
+  align-self: stretch;
+  width: 4px;
+  border-radius: 2px;
+  background: var(--approach-accent);
+  flex-shrink: 0;
+}
+
+.approach__heading-title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: var(--color-text);
+  text-align: left;
+}
+
+.approach__staff-photo {
+  position: absolute;
+  top: 0;
+  width: 331px;
+  height: 257px;
+}
+
+.approach__staff-photo img {
+  height: 215%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  top: -55%;
+  transform: scale(0.6);
+}
+
+.approach__staff-photo--1 {
+  left: 922px;
+  z-index: 1;
+}
+
+.approach__staff-photo--2 {
+  left: 756px;
+  z-index: 2;
+}
+
+.approach__panel {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 80px;
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  z-index: 3;
+}
+
+.approach__block {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.approach__block-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+
+.approach__block-bar {
+  width: 4px;
+  height: 38px;
+  border-radius: 2px;
+  background: var(--approach-accent);
+  flex-shrink: 0;
+}
+
+.approach__block-title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.approach__block-photo {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.approach__block-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.approach__block-body {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.approach__block-text {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+
+.approach__block-subheading {
+  margin: 16px 0;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-text);
+}
+
+.approach__block-list {
+  margin: 0;
+  padding-left: 1.5em;
+  list-style: disc outside;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+
+.approach__block-list--strong li {
+  font-weight: 700;
+}
+
+.approach__block-list--strong li span {
+  background: linear-gradient(to top, rgba(255, 224, 76, 0.55) 0%, rgba(255, 224, 76, 0.55) 40%, transparent 40%);
+}
+
+/* ==========================================================================
+   Approach（アプローチ）- SP
+   ========================================================================== */
+.sp-approach {
+  --approach-accent: #b1bd8c;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--color-white);
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.sp-approach__heading-title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.4;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.sp-approach__block {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.sp-approach__block-bar {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--approach-accent);
+  padding: 12px 8px;
+}
+
+.sp-approach__block-title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.sp-approach__block-photo {
+  width: 100%;
+  height: 189px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sp-approach__block-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.sp-approach__block-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sp-approach__block-text {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+
+.sp-approach__block-subheading {
+  margin: 16px 0;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-text);
+}
+
+.sp-approach__block-list {
+  margin: 0;
+  padding-left: 1.3em;
+  list-style: disc outside;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+
+.sp-approach__block-list--strong li {
+  font-weight: 700;
+}
+
+.sp-approach__block-list--strong li span {
+  background: linear-gradient(to top, rgba(255, 224, 76, 0.55) 0%, rgba(255, 224, 76, 0.55) 40%, transparent 40%);
+}

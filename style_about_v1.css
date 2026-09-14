@@ -1,0 +1,257 @@
+/* ==========================================================================
+   会社概要ページ 専用スタイル
+   style_v35.css を土台に読み込んだ上で追加する差分CSS。
+   共通セクション（ヘッダー／フッター等）は style_v35.css をそのまま流用。
+   ここには会社概要ページ固有セクションのみ追加する。
+   ========================================================================== */
+
+/* ==========================================================================
+   ページタイトル（見出し）バナー - PC
+   ========================================================================== */
+.page-hero {
+  position: relative;
+  width: 100%;
+  height: 272px;
+  box-sizing: border-box;
+  padding: 48px var(--container-padding-inline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.page-hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.page-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(125, 102, 78, 0.88);
+  z-index: 1;
+}
+
+.page-hero__inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.page-hero__eyebrow {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 6.4px;
+  color: var(--color-nav-bg);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.page-hero__bar {
+  width: 60px;
+  height: 2px;
+  background: var(--color-nav-bg);
+}
+
+.page-hero__title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  letter-spacing: 8px;
+  color: var(--color-white);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   会社概要本文 - PC
+   ========================================================================== */
+.about {
+  width: 100%;
+  background: var(--color-nav-bg);
+}
+
+.about__inner {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  box-sizing: border-box;
+  padding: 80px 360px 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.about__row {
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(125, 102, 78, 0.4);
+}
+
+.about__row-main {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about__row-main--top {
+  align-items: flex-start;
+}
+
+.about__label {
+  margin: 0;
+  flex-shrink: 0;
+  width: 120px;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about__value {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #000;
+}
+
+/* ==========================================================================
+   ページタイトル（見出し）バナー - SP
+   ========================================================================== */
+.sp-page-hero {
+  position: relative;
+  width: 100%;
+  height: 128px;
+  box-sizing: border-box;
+  padding-inline: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sp-page-hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.sp-page-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(125, 102, 78, 0.88);
+  z-index: 1;
+}
+
+.sp-page-hero__inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.sp-page-hero__eyebrow {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: var(--color-nav-bg);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sp-page-hero__bar {
+  width: 40px;
+  height: 2px;
+  background: var(--color-nav-bg);
+}
+
+.sp-page-hero__title {
+  margin: 0;
+  width: 100%;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.4;
+  letter-spacing: 4px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+/* ==========================================================================
+   会社概要本文 - SP
+   ========================================================================== */
+.sp-about {
+  width: 100%;
+  background: var(--color-nav-bg);
+}
+
+.sp-about__list {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px 16px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.sp-about__row {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 8px 12px;
+  border-bottom: 1px solid rgba(125, 102, 78, 0.4);
+}
+
+.sp-about__row-main {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sp-about__row-main--top {
+  align-items: flex-start;
+}
+
+.sp-about__label {
+  margin: 0;
+  flex-shrink: 0;
+  width: 100px;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.sp-about__value {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000;
+}

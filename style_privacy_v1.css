@@ -1,0 +1,336 @@
+/* ==========================================================================
+   プライバシーポリシーページ 専用スタイル
+   style_v35.css を土台に読み込んだ上で追加する差分CSS。
+   共通セクション（ヘッダー／フッター等）は style_v35.css をそのまま流用。
+   ここにはプライバシーポリシーページ固有セクションのみ追加する。
+   ========================================================================== */
+
+/* ==========================================================================
+   ページタイトル（見出し）バナー - PC
+   ========================================================================== */
+.page-hero {
+  position: relative;
+  width: 100%;
+  height: 272px;
+  box-sizing: border-box;
+  padding: 48px var(--container-padding-inline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.page-hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.page-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(125, 102, 78, 0.88);
+  z-index: 1;
+}
+
+.page-hero__inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.page-hero__eyebrow {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 6.4px;
+  color: var(--color-nav-bg);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.page-hero__bar {
+  width: 60px;
+  height: 2px;
+  background: var(--color-nav-bg);
+}
+
+.page-hero__title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  letter-spacing: 8px;
+  color: var(--color-white);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   プライバシーポリシー本文 - PC
+   ========================================================================== */
+.privacy {
+  width: 100%;
+  background: var(--color-nav-bg);
+}
+
+.privacy__inner {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  box-sizing: border-box;
+  padding: 80px 360px 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.privacy__lead {
+  margin: 0;
+  width: 100%;
+  padding-block: 24px;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #000;
+}
+
+.privacy__section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(125, 102, 78, 0.4);
+}
+
+.privacy__section-title {
+  margin: 0;
+  width: 100%;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #000;
+}
+
+.privacy__section-text {
+  margin: 0;
+  width: 100%;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #000;
+}
+
+.privacy__section-text a {
+  text-decoration: underline;
+}
+
+.privacy__section-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #000;
+}
+
+.privacy__section-list li {
+  list-style: disc;
+  margin-left: 21px;
+}
+
+.privacy__section-address {
+  margin: 0;
+  width: 100%;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #000;
+}
+
+.privacy__section-address p {
+  margin: 0;
+}
+
+/* ==========================================================================
+   ページタイトル（見出し）バナー - SP
+   ========================================================================== */
+.sp-page-hero {
+  position: relative;
+  width: 100%;
+  height: 128px;
+  box-sizing: border-box;
+  padding-inline: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sp-page-hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.sp-page-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(125, 102, 78, 0.88);
+  z-index: 1;
+}
+
+.sp-page-hero__inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.sp-page-hero__eyebrow {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: var(--color-nav-bg);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sp-page-hero__bar {
+  width: 40px;
+  height: 2px;
+  background: var(--color-nav-bg);
+}
+
+.sp-page-hero__title {
+  margin: 0;
+  width: 100%;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.4;
+  letter-spacing: 4px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+/* ==========================================================================
+   プライバシーポリシー本文 - SP
+   ========================================================================== */
+.sp-privacy {
+  width: 100%;
+  background: var(--color-nav-bg);
+}
+
+.sp-privacy__lead {
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.sp-privacy__list {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px 24px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.sp-privacy__section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(125, 102, 78, 0.4);
+}
+
+.sp-privacy__section-title {
+  margin: 0;
+  width: 100%;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000;
+}
+
+.sp-privacy__section-text {
+  margin: 0;
+  width: 100%;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #000;
+}
+
+.sp-privacy__section-text a {
+  text-decoration: underline;
+}
+
+.sp-privacy__section-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #000;
+}
+
+.sp-privacy__section-list li {
+  list-style: disc;
+  margin-left: 19.5px;
+}
+
+.sp-privacy__section-address {
+  margin: 0;
+  width: 100%;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #000;
+}
+
+.sp-privacy__section-address p {
+  margin: 0;
+}
